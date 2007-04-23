@@ -1,6 +1,7 @@
 %define game_name secondlife
 %define name %{game_name}-artwork
-%define version 1.14.0.0
+%define version 1.15.0.0
+%define beta 1
 %define snapshot 0
 %if %{snapshot}
 %define release %mkrel 0.%{snapshot}.1
@@ -8,7 +9,7 @@
 %define distname %{oname}-%{snapshot}
 %else
 %define release %mkrel 1
-%define oname slviewer-artwork
+%define oname slviewer-artwork%{?beta:-beta}
 %define distname %{oname}-%{version}
 %endif
 
