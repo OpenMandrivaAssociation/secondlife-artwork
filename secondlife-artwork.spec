@@ -28,6 +28,7 @@ Url: http://secondlife.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Obsoletes: secondlife-static-data
+Conflicts: secondlife < 1.15.0.2
 
 %description
 Second Life is a 3-D virtual world entirely built and owned by its residents.
@@ -51,5 +52,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_gamesdatadir}/%{game_name}/app_settings/*
 %{_gamesdatadir}/%{game_name}/skins/textures/*
-
-
+%{_gamesdatadir}/%{game_name}/character
+%{_gamesdatadir}/%{game_name}/res
+%{_gamesdatadir}/%{game_name}/res-sdl
