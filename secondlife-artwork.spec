@@ -49,7 +49,7 @@ cp -a indra/newview %{buildroot}%{_gamesdatadir}/%{game_name}
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
+%defattr(0644,root,root,0755)
 %{_gamesdatadir}/%{game_name}/app_settings/*
 %{_gamesdatadir}/%{game_name}/skins/textures/*
 %{_gamesdatadir}/%{game_name}/character
