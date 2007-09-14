@@ -1,6 +1,6 @@
 %define game_name secondlife
 %define name %{game_name}-artwork
-%define version 1.18.0.6
+%define version 1.18.2.0
 %define beta 0
 %define snapshot 0
 %if %{snapshot}
