@@ -25,6 +25,7 @@ Source0: http://secondlife.com/developers/opensource/downloads/%{distname}.zip
 License: GPL
 Group: Games/Other
 Url: http://secondlife.com/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Obsoletes: secondlife-static-data
 Conflicts: secondlife < 1.15.0.2
