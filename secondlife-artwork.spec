@@ -8,7 +8,7 @@
 %define oname slviewer-artwork
 %define distname %{oname}-%{snapshot}
 %else
-%define release %mkrel 1
+%define release %mkrel 3
 %if %{beta}
 %define oname slviewer-artwork-beta
 %else
